@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Auto Choice Sniper",
+  "version": "1.0",
+  "description": "Auto-selects, saves, and refreshes for Moodle choices.",
+  "content_scripts": [
+    {
+      "matches": ["*://c2.etf.unsa.ba/mod/choice/view.php*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
